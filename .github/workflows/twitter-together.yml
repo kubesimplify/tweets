@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
-      - name: checkout master
+      - name: checkout main
         uses: actions/checkout@v2
       - name: Tweet
         uses: gr2m/twitter-together@v1.x
