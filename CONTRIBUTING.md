@@ -1,8 +1,5 @@
-# tweets
-### Welcome to the Repo for automating kubesimplify Tweets !!
-
-- This is the **tweets** repo for KUBESIMPLIFY
-- We are targeting to automate the tweets for KUBESIMPLIFY
+- Welcome to the **tweets** repo for KUBESIMPLIFY
+- We are targeting to automate the tweets for KUBESIMPLIFY 
 
 In this guide I will show you step by step how you can contribute here.
 
@@ -31,7 +28,7 @@ git remote add upstream https://github.com/kubesimplify/tweets.git
 git branch <branch_name>
 
 git checkout <branch_name>
-```
+``` 
 * NOTE : Always try to make separate branches for each task and make PRs using those branches. Keeping the main of your fork clean, is always a good idea.
 
 - Make a directory with an appropriate name
@@ -57,7 +54,6 @@ git push origin <branch_name>
 
 - We are waiting for your pull request.
 - You can always have discussions regarding posting tweets on the [Discord Channel](https://saiyampathak.com/discord)
-
 
 
 
