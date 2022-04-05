@@ -17,11 +17,4 @@ Please delete options that are not relevant.
 
 ## Screenshots (if appropriate):
 
-# Checklist:
 
-- [ ] My code follows the style guidelines of this project
-- [ ] My code is not pirated 
-- [ ] I have performed a self-review of my code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
-- [ ] My changes generate no new warnings
