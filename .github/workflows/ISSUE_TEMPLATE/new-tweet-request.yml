@@ -4,7 +4,7 @@ title: "[Tweet] <title>"
 body:
   - type: markdown
     attributes:
-      value: |
+      value: 
         Thank You for creating a new tweet request and it will be merged soon and the tweet will go out soon
   - type: checkboxes
     attributes:
@@ -27,6 +27,6 @@ body:
   - type: textarea
     attributes:
       label: Detailed information about the tweet.
-      placeholder: Tell us all the information related to the tweet or some amazinf examples related to tweet.
+      placeholder: Tell us all the information related to the tweet or some amazing examples related to tweet.
     validations:
       required: false 
