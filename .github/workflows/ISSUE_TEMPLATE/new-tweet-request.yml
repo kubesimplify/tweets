@@ -4,7 +4,7 @@ title: "[Tweet] <title>"
 body:
   - type: markdown
     attributes:
-      value: |
+      value: 
         Thank You for creating a new tweet request and it will be merged soon and the tweet will go out soon
   - type: checkboxes
     attributes:
