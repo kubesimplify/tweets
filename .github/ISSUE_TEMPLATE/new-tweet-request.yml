@@ -5,19 +5,20 @@ body:
   - type: markdown
     attributes:
       value: 
-        Thank You for creating a new tweet request and it will be merged soon and the tweet will go out soon
-  - type: checkboxes
-    attributes:
-      options: 
-      - label: Remember to follow the 280 characters limit to tweet 
-        required: true
+        Thank you for creating a new tweet request. A PR will be automatically generated on submitting this issue. Please wait for the PR to be approved for your tweet to go out.
   - type: textarea
     id: Tweet
     attributes:
       label: What do you want to tweet?
-      placeholder: Time to drop a tweet.
+      placeholder: Write your tweet here
     validations:
       required: true
+  - type: checkboxes
+    label: Caution
+    attributes:
+      options: 
+      - label: This tweet follows the 280 characters limit 
+        required: true
   - type: textarea
     attributes:
       label: Why you want to tweet this?
