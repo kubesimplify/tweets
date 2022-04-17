@@ -1,0 +1,39 @@
+name: Parse issue and create PR
+
+on:
+  issues:
+    types: ['opened']
+
+jobs:
+  parse-issue-and-create-pr:
+    runs-on: ubuntu-latest
+    name: Parse issue and commit into tweets folder
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    # github-issue-parser parses issue and echo json output to tweet.json
+    - name: Run Issue form parser
+      uses: stefanbuck/github-issue-parser@v2
+      id: issue-parser
+      with:
+        template-path: .github/ISSUE_TEMPLATE/new-tweet-request.yml
+    # parse tweet.json and echo the required data to .tweet file
+    - run: |
+        echo '${{ steps.issue-parser.outputs.jsonString }}' > tweet.json
+        string=$(jq '.Tweet' tweet.json)
+        echo ${string:1:-1} > tweets/${{ github.event.issue.number }}.tweet
+    # create-pull-request commits the .tweet file and opens a PR
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        add-paths: |
+          tweets/${{ github.event.issue.number }}.tweet
+        commit-message: Add new tweet file via automation
+        title: 'New tweet request from ${{ github.event.issue.user.login }}'
+        body: |
+          This PR is auto-generated.
+          Fixes: #${{ github.event.issue.number }}
+        branch: add/${{ github.event.issue.number }}
+        base: main
+        signoff: true
+        delete-branch: true
