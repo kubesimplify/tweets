@@ -17,7 +17,7 @@ body:
     label: Caution
     attributes:
       options: 
-       label: This tweet follows the 280 characters limit 
+        label: This tweet follows the 280 characters limit 
         required: true
   - type: textarea
     attributes:
