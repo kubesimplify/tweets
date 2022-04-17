@@ -1,0 +1,33 @@
+name: New Tweet Request
+description: Create a new tweet request
+title: "[Tweet] <title>"
+body:
+  - type: markdown
+    attributes:
+      value: 
+        Thank you for creating a new tweet request. A PR will be automatically generated on submitting this issue. Please wait for the PR to be approved for your tweet to go out.
+  - type: textarea
+    id: Tweet
+    attributes:
+      label: What do you want to tweet?
+      placeholder: Write your tweet here
+    validations:
+      required: true
+  - type: checkboxes
+    label: Caution
+    attributes:
+      options: 
+      - label: This tweet follows the 280 characters limit 
+        required: true
+  - type: textarea
+    attributes:
+      label: Why you want to tweet this?
+      placeholder: Tell us what brings you up to write this amazing tweet.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Extra notes.
+      placeholder: Tell us more about the tweet.
+    validations:
+      required: false 
