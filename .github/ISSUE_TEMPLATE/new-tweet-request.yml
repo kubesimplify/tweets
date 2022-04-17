@@ -27,7 +27,7 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: Detailed information about the tweet.
-      placeholder: Tell us all the information related to the tweet or some amazing examples related to tweet.
+      label: Extra notes.
+      placeholder: Tell us more about the tweet.
     validations:
       required: false 
