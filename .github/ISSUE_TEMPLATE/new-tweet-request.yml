@@ -18,7 +18,7 @@ body:
     attributes:
       options: 
        - label: This tweet follows the 280 characters limit 
-       - required: true
+         required: true
   - type: textarea
     attributes:
       label: Why you want to tweet this?
