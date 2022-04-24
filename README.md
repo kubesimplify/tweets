@@ -111,9 +111,7 @@ git push origin <branch_name> # this will push your changes to your github repo
 - Go to your github forked repo, You will see an option to **"Compare and Pull request"**.
 - Click on that and Then You will see an option to **"Create pull request"**. Click on that.
 - That's it you have made your pull request.🥳
-- After your request is accepted, You will see the folder of the directory name on the repository.
-- We are waiting for your pull request.
-- You can always have discussions regarding posting tweets on the [Discord Channel](https://saiyampathak.com/discord)
+
 
 <a href = "https://github.com/kubesimplify/tweets/graphs/contributors">
 <img src = "https://contrib.rocks/image?repo=kubesimplify/tweets"/>
